@@ -101,10 +101,10 @@ function App() {
             <div className="footer">
                 <p>Disclaimer: I do not store any of your information anywhere. If you refresh the page, you will lose all the progress.</p>
                 <p> Repo for this website </p>
-                <a href="https://github.com/yourUserName/yourRepo" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/luhamoza/contoh-surat-rasmi-fe" target="_blank" rel="noopener noreferrer">
                     frontend
                 </a><br/>
-                <a href="https://github.com/yourUserName/yourRepo" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/luhamoza/contoh-surat-rasmi-be" target="_blank" rel="noopener noreferrer">
                     backend
                 </a>
             </div>
