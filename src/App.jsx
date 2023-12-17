@@ -14,7 +14,7 @@ function App() {
 
     const createPdf = async () => {
         try {
-            await fetch('http://localhost:8080/api/pdf', {
+            await fetch('https://suratrasmi.onrender.com/api/pdf', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
@@ -28,7 +28,6 @@ function App() {
                     companyAddress: companyAddress,
                     yourPosition: yourPosition,
                     endWorkDate: endWorkDate,
-                    yourSignature: yourSignature,
                 })
             })
                 .then(response => response.blob())
@@ -97,7 +96,7 @@ function App() {
                 {pdfUrl && <button onClick={handleDownload}>Download PDF</button>}
             </form>
             <object data={pdfUrl} type="application/pdf" width="100%" height="800px">
-                <p>This browser does not support PDF!</p>
+                <p style={{color:"white"}}>This browser does not support PDF!</p>
             </object>
             <div className="footer">
                 <p>Disclaimer: I do not store any of your information anywhere. If you refresh the page, you will lose all the progress.</p>
