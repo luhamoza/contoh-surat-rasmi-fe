@@ -10,7 +10,6 @@ function App() {
     const [companyAddress, setCompanyAddress] = useState('');
     const [yourPosition, setYourPosition] = useState('');
     const [endWorkDate, setEndWorkDate] = useState('');
-    const [yourSignature, setYourSignature] = useState('');
     const [pdfUrl, setPdfUrl] = useState('');
 
     const createPdf = async () => {
@@ -94,10 +93,6 @@ function App() {
                     Tarikh Terakhir Bekerja:
                     <input required type="date" value={endWorkDate} onChange={(e) => setEndWorkDate(e.target.value)}/>
                 </label>
-                {/*<label>*/}
-                {/*    Signature:*/}
-                {/*    <input required type="text" value={yourSignature} onChange={(e) => setYourSignature(e.target.value)} />*/}
-                {/*</label>*/}
                 <button type="submit">Preview PDF</button>
                 {pdfUrl && <button onClick={handleDownload}>Download PDF</button>}
             </form>
